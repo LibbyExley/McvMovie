@@ -4,14 +4,16 @@ using McvMovie.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace McvMovie.Migrations
 {
     [DbContext(typeof(McvMovieContext))]
-    partial class McvMovieContextModelSnapshot : ModelSnapshot
+    [Migration("20190909134742_Rating1")]
+    partial class Rating1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
